@@ -25,5 +25,6 @@ pkgs.mkShell {
     python -m venv venv 
     source ./venv/bin/activate
     pip install tensorflow tensorflow_hub pyDH
+    ./venv/bin/python main.py
     '';
 }
