@@ -21,9 +21,9 @@ To make use this project on your own, you need to have:
 * Aggregator: This is where some preprocessing will happen, and then send the image/video as well as the processed data to a VPS on the cloud, in the case of this project, we've used a [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/) that is connected to the internet.
 * VPS/Server: This is used to do some heavy processing, extract meaningful information from the provided data, construct a feedback and then publish the results to the MQTT broker, we've used a VPS created on [Azure cloud](https://azure.microsoft.com/en-us).
 
-After having equipements ready, we need to get [Nix](https://nixos.org/) installed on each one of them as well as enabling [Flakes](https://nixos.wiki/wiki/flakes), getting that ready, now copy each folder on the respective device following the bellow table and then follow the `GUIDE.md` under each folder
+After getting all equipements, you need to install [nix](https://nixos.org/) on each one of them as well as enabling [flakes](https://nixos.wiki/wiki/flakes) feature, finally copy each folder on the respective device following the bellow table and then follow the `GUIDE.md` under each folder
 
-|folde      |device      |
+|folder     |device      |
 |-----------|------------|
 |/aggregator|*Aggregator*|
 |/client    |*Client*    |
