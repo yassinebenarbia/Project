@@ -102,11 +102,11 @@ def process():
 
 # This script will run under the raspberry
 if __name__ == '__main__':
-
+    ip = "192.168.46.39"
     print("""
     This File is meant to run on the client side
     """)
-    client = Client("192.168.1.212", "8081", "user", "4", parse_ip=True)
+    client = Client(ip, "8081", "user", "4", parse_ip=True)
     client.gen_credintals()
     client.share_secret()
     client.read_data(parse_path=True)
