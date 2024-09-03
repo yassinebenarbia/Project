@@ -7,6 +7,7 @@ pkgs.mkShell {
       gcc-unwrapped
       ffmpeg
       wget
+      tar
       libGL
       pkg-config
       python311Packages.flask
