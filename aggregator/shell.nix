@@ -14,7 +14,6 @@ pkgs.mkShell {
       glib
       python311Packages.flask
       python311Packages.cryptography
-      python311Packages.paho-mqtt
       python311Packages.h5py
   ];
 
