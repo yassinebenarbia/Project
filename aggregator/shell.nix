@@ -17,7 +17,6 @@ pkgs.mkShell {
       python311Packages.h5py
   ];
 
-  LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib/:/run/opengl-driver/lib/";
 # using pip here in case some packages are not available in 
 # the nix store, e.g. tensorflow_hub, sklearn, etc
   shellHook = ''
@@ -33,7 +32,9 @@ pkgs.mkShell {
         tar xzf ./venv/models/movenet/thunder/out.tar.gz --directory ./venv/models/movenet/thunder/
         )
 
-    pip install 'keras==2.15' pyDH 'tensorflow==2.15' tensorflow_hub --upgrade
     source ./venv/bin/activate
+    pip install 'keras==2.15' pyDH 'tensorflow==2.15' tensorflow_hub --upgrade
+    ./venv/bin/python main.py
+
     '';
 }
