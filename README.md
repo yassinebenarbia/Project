@@ -13,7 +13,7 @@ The goal of this project is _to provide a **cheap** and **reliablve** feedback t
 
 This project exposes an API end point based on the MQTT protocol that can be used to develop sports (for now, it's only some yoga poses) related applications; it first takes a video/image input from the client side, do some preprocessing on the edge, and then send it to a VPS on the cloud where it gets evaluated and processed to extract meaningful information and construct a reliable 'feedback', lastly it published it's results on a predefined MQTT broker on a predefined topics that other clients can subscribe.
 
-![image](./assets/DatatFlow.jpg)
+![image](./assets/DataFlow.jpg)
 ## Setup this project
 
 To make use this project on your own, you need to have:
