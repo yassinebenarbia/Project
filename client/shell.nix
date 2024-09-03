@@ -1,4 +1,4 @@
-# This is to initiate the default virtual environement
+# This is used to initiate the default virtual environement
 { pkgs ? import <nixpkgs> {} }: 
 pkgs.mkShell {
 
@@ -13,7 +13,6 @@ pkgs.mkShell {
       glib
       python311Packages.flask
       python311Packages.cryptography
-      python311Packages.paho-mqtt
       python311Packages.h5py
   ];
 
